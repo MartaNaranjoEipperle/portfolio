@@ -1,0 +1,133 @@
+h1 {
+    font-size: 45px;
+    margin-left: 77px;
+    margin-top: 33px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 77px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 70%;
+    width: 109px;
+    height: 88px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.contact {
+    background: #5221E6;
+    opacity: 100%;
+}
+
+.menu-img {
+    display: none;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+.dropdown {
+    display: none;
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: none;
+    background-color: currentColor;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    a{
+        height: 30px;
+    }
+}
+
+
+.dropdown-content a {
+    color: #fff;
+    padding-top: 7px;
+    padding-left: 3px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+.initial {
+    font-size: 45px;
+    margin-left: 77px;
+    margin-top: 33px;
+    opacity: 100%;
+    font-weight: 600;
+    &:hover{
+        opacity: 0.5;
+    }
+    @media(max-width:655px) {
+        margin-left: 50px;
+    }
+}
+
+@media(max-width:930px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-img {
+        display: block;
+        display: block;
+        width: 30px;
+        height: 30px;
+        
+    }
+
+    .dropdown{
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 77px;
+    }
+
+    .dropbtn{
+        display: block;
+    }
+
+    .initial {
+        margin-top: 0px;
+    }
+}
+
+@media(max-width:655px) {
+    .dropdown {
+        margin-right: 50px;
+    }
+
+}

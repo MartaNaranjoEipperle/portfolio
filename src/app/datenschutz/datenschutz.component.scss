@@ -1,0 +1,32 @@
+.d-header {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    &:hover{
+        opacity: 0.5;
+    }
+}
+
+.datenschutz {
+    padding-left: 77px;
+    padding-right: 77px;
+    padding-top: 80px;
+    padding-bottom: 10px; 
+    background-color: #FFFF;
+}
+
+
+a {
+    font-size: 45px;
+    color: #FFFF;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 77px;
+    padding-right: 77px;
+    &:hover{
+        opacity: 0.5;
+    }
+}

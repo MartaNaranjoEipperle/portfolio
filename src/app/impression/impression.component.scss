@@ -1,0 +1,281 @@
+.short-about {
+    color: white;
+    position: absolute;
+    left: 661px;
+    top: 273px;
+    margin-right: 77px;
+}
+
+.my-picture {
+    background-image: url('/assets/img/marta1.jpeg');
+    background-size: cover;
+    margin-top: 50px;
+    width: 750px;
+    height: 650px;
+    left: 0px;
+    top: 125px;
+    background-position: bottom -106px right 0px;
+    opacity: 0.8;
+}
+
+.me {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 78px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.passion {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+@media(max-width:1577px) {
+
+    .short-about {
+        left: 597px;
+    }
+
+}
+
+@media(max-width:1515px) {
+
+
+    .me {
+        font-size: 50px;
+        line-height: 71px;
+    }
+
+}
+
+@media(max-width:1450px) {
+    .my-picture {
+        width: 700px;
+        height: 575px;
+    }
+
+    .short-about {
+        left: 587px;
+    }
+
+}
+
+@media(max-width:1360px) {
+    .my-picture {
+        width: 654px;
+        height: 500px;
+    }
+
+    .short-about {
+        left: 532px;
+        top: 240px;
+    }
+
+    .me {
+        line-height: 67px;
+    }
+
+    .passion {
+        margin-top: 30px;
+    }
+
+}
+
+@media(max-width:1247px) {
+    .my-picture {
+        width: 654px;
+        height: 500px;
+    }
+
+    .short-about {
+        left: 532px;
+        top: 290px;
+    }
+
+    .me {
+        font-size: 46px;
+
+        line-height: 56px;
+    }
+
+    .passion {
+        font-size: 15px;
+        line-height: 140%;
+    }
+
+}
+
+@media(max-width:1202px) {
+    .my-picture {
+        width: 609px;
+        height: 443px;
+    }
+
+    .short-about {
+        left: 499px;
+        top: 279px;
+
+    }
+
+    .me {
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    .passion {
+        font-size: 15px;
+        line-height: 140%;
+        margin-top: 15px;
+    }
+
+}
+
+
+@media(max-width:1150px) {
+
+    .short-about {
+        font-size: 31px;
+        line-height: 43px;
+    }
+
+}
+
+
+@media(max-width:1093px) {
+
+    .short-about {
+        font-size: 34px;
+        line-height: 49px;
+    }
+
+    .my-picture {
+        width: 572px;
+        height: 384px;
+    }
+
+    .short-about {
+        left: 499px;
+        top: 259px;
+
+    }
+
+    .me {
+        font-size: 35px;
+        line-height: 47px;
+    }
+
+    .passion {
+        font-size: 13px;
+        line-height: 140%;
+        margin-top: 10px;
+    }
+
+}
+
+@media(max-width:1026px) {
+
+    .me {
+        font-size: 33px;
+        line-height: 45px;
+    }
+
+    .passion {
+        display: none;
+    }
+
+    .short-about {
+        left: 499px;
+        top: 279px;
+
+    }
+
+}
+
+@media(max-width:930px) {
+
+    .short-about {
+        top: 259px;
+        left: 459px;
+    }
+
+    .my-picture {
+        width: 522px;
+        height: 334px;
+    }
+
+}
+
+@media(max-width:890px) {
+
+    .short-about {
+        top: 239px;
+        left: 459px;
+    }
+
+}
+
+@media(max-width:830px) {
+    .short-about {
+        position: relative;
+        top: -61px;
+        left: 77px;
+        width: 80vw;
+    }
+
+    .me {
+        font-size: 45px;
+        line-height: 56px;
+    }
+
+    .passion {
+        display: block;
+        font-size: 15px;
+        line-height: 150%;
+    }
+
+    .my-picture {
+        width: 100vw;
+        height: 384px;
+        background-position: center;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:741px) {
+
+
+    .me {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .my-picture {
+        height: 350px;
+    }
+
+}
+
+@media(max-width:655px) {
+
+    .short-about {
+        left: 50px;
+    }
+
+    .me {
+        line-height: 44px;
+    }
+
+    .my-picture {
+        height: 300px;
+    }
+
+}
