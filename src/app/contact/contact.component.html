@@ -9,11 +9,11 @@
 <form action="https://marta-eipperle.developerakademie.net/send_mail%204/send_mail.php" method="post" ngNativeValidate class="right-site">
     <div class="contact-input" data-aos="fade-left" >
         Name
-        <input type="text" name="name" required>
+        <input type="text" name="name" minlength="2" required>
         Email
         <input type="email" name="mail" required>
         Message
-        <textarea class="message" name="message" required></textarea>
+        <textarea class="message" name="message" minlength="10" required></textarea>
     </div>
 
     <button data-aos="fade-up">LET'S GET STARTED</button>
