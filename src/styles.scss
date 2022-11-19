@@ -11,5 +11,20 @@ body, html{
     max-width: 100%;
     margin: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-color: #70d0e1 #8cd1e4 !important;
+
+::-webkit-scrollbar{
+width: 5px;
+height: 3px;
 }
 
+::-webkit-scrollbar-track-piece{
+background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:vertical{
+height: 7px;
+background-color: #4b11f6;
+}
+}
