@@ -3,6 +3,7 @@
     width: 50%;
     padding-left: 77px;
     padding-right: 77px;
+    padding-bottom: 120px;
     font-size: 18px;
     line-height: 170%;
 
@@ -16,9 +17,9 @@
 }
 
 .image {
-    background-image: url('/assets/img/marta2.jpg');
+    background-image: url('/assets/img/marta2.jpeg');
     background-size: cover;
-    background-position: top;
+    background-position: left;
     width: 50%;
     right: 0px;
 }
@@ -27,7 +28,7 @@
     width: 122px;
     margin-top: 120px;
     border-bottom: 1px solid #5B6876;
-    margin-bottom: 120px;
+    
 
     a {
         text-decoration: none;
@@ -37,6 +38,10 @@
             opacity: 0.5;
         }
     }
+}
+
+.none{
+    display: none;
 }
 
 @media(max-width:1200px) {
@@ -59,11 +64,22 @@
             font-size: 45px;
         }
     }
+
+    .image{
+        background-position: bottom 0px right -370px;
+    }
 }
 
+
+@media(max-width:990px) {
+
+    .image{
+        background-position: bottom 0px right -500px;
+    }
+}
 @media(max-width:850px) {
     .about-me {
-        width: 80%;
+        width: 82%;
     }
 
     .image {
