@@ -1,5 +1,9 @@
-<div class="about-me">
-    <h1 data-aos="fade-down">About me</h1>
+<div class="about-me" [ngClass]="{
+  'padding': more
+}">
+    <h1 data-aos="fade-down" [ngClass]="{
+      'none': more
+    }">About me</h1>
     <div data-aos="fade-right">
       Hello, I'm a 31-year-old German-speaking programmer
         with experience in developing web applications with
@@ -10,9 +14,9 @@
         few months, I have used every free hour to learn common
         programming languages.
         </div> 
-        <div data-aos="fade-right" [ngClass]="{
+        <div  [ngClass]="{
             'none': !more
-          }">
+          }" data-aos="fade-right">
           Based on various projects
           I have put the theory into practice. Starting with HTML and CSS,
           I have also implemented the latest projects with JavaScript
@@ -26,10 +30,10 @@
           and try everything out.
     </div>
 
-    <div class="more" data-aos="fade-up" [ngClass]="{
+    <div  data-aos="fade-up" [ngClass]="{
         'none': more
       }">
-        <div (click)="open()">More about me</div>
+        <div class="moreAbout" (click)="open()">More about me</div>
     </div>
 </div>
 <div class="image"></div>
