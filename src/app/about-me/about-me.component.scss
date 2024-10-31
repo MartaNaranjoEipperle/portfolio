@@ -6,25 +6,51 @@
     font-size: 18px;
     line-height: 170%;
 
+    @media(min-width:2090px) {  
+        font-size: 24px;
+    }
+
+    @media (min-width: 1800px) {
+        margin-left: 177px;
+    }
+
     h1 {
         padding-top: 120px;
         font-weight: 700;
         font-size: 55px;
         line-height: 66px;
+        @media(min-width:2090px) {  
+            font-size: 75px;
+        }
     }
 
 }
 
 .bottom{
     margin-bottom: 30px;
+    margin-right: 75px;
 }
 
 .image {
-    background-image: url('/assets/img/marta2.jpeg');
-    background-size: cover;
+    position: absolute;
+    left: 61vw;
+    margin-top: 155px;
+    background-image: url('/assets/img/marta2.png');
+    background-size: contain;
     background-position: left;
-    width: 50%;
-    right: 0px;
+    background-position: center;
+    background-repeat: inherit;
+    width: 472px;
+    height: 452px;
+    
+    @media(min-width:2090px) {  
+        width: 577px;
+        height: 552px;
+    }
+
+    @media (max-width: 1800px) {
+        left: 52vw;
+    }
 }
 
 .moreAbout {
@@ -42,17 +68,34 @@
             opacity: 0.5;
         }
     }
+
+    @media(min-width:2090px) {  
+        font-size: 24px;
+        width: 162px;
+    }
 }
 
 .none{
     display: none;
 }
 
+.padding-top{
+    padding-top: 10px!important;
+}
+
+.padding-bottom{
+    padding-bottom: 60px!important;
+}
+
 .padding{
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 16px;
+    @media(min-width:2090px) {  
+        font-size: 24px;
+    }
 }
+
 
 @media(max-width:1200px) {
     .about-me {
@@ -67,6 +110,13 @@
     }
 }
 
+@media(max-width:1130px) {
+    .image{
+        width: 420px;
+        height: 402px;
+    }
+}
+
 @media(max-width:1093px) {
 
     .about-me {
@@ -74,33 +124,55 @@
             font-size: 45px;
         }
     }
-
-    .image{
-        background-position: bottom 0px right -370px;
-    }
 }
 
-
-@media(max-width:990px) {
-
-    .image{
-        background-position: bottom 0px right -500px;
-    }
-}
 @media(max-width:850px) {
     .about-me {
         width: 82%;
     }
 
     .image {
-        width: 100vw;
-        height: 61vh;
-        background-position: inherit;
+        position: static;
+        margin-top: -90px;
+       margin-bottom: -120px;
+    }
+
+    .bottom{
+        margin-right: 0px;
+    }
+}
+
+@media(max-width:708px) {
+    .image {
+       margin-bottom: -80px;
     }
 }
 
 @media(max-width:655px) {
     .about-me {
-        padding-left: 50px;
+        width: 77%;
+    }
+    .image {
+        height: 335px;
+        width: 350px;
+    }
+}
+
+@media(max-width:440px) {
+    .about-me {
+        width: 67%;
+    }
+
+    .image {
+        margin-bottom: 0px;
+        margin-top: -55px;
+    }
+}
+
+@media(max-height:390px) {
+    .image {
+        width: 100vw;
+        height: 100vh;
+        background-position: inherit;
     }
 }

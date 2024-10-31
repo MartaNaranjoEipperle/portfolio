@@ -1,21 +1,21 @@
 <div class="left-site">
-    <h1 data-aos="fade-right">Let's talk buissnes</h1>
+    <h1 data-aos="fade-right">Let's talk business</h1>
     <div data-aos="fade-up">
         Now that you know a lot about me, let me know if you are interested to work with me.
     </div>
    
 </div>
 
-<form action="https://marta-eipperle.developerakademie.net/portfolio/send_mail.php" method="post" ngNativeValidate class="right-site">
+<form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" method="post" ngNativeValidate class="right-site">
     <div class="contact-input" data-aos="fade-left" >
         Name
-        <input type="text" name="name" minlength="2" required>
+        <input [(ngModel)]="contactData.name" type="text" name="name" minlength="2" required>
         Email
-        <input type="email" name="mail" required>
+        <input [(ngModel)]="contactData.email" type="email" name="mail" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
         Message
-        <textarea class="message" name="message" minlength="10" required></textarea>
+        <textarea [(ngModel)]="contactData.message" class="message" name="message" minlength="10" required></textarea>
     </div>
 
-    <button data-aos="fade-up">LET'S GET STARTED</button>
+    <button [disabled]="isSubmitting" data-aos="fade-up">{{ buttonText }}</button>
 
 </form>

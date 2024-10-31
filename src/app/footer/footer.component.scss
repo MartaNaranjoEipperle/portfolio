@@ -9,6 +9,11 @@
     margin-bottom: 50px;
     margin-top: 50px;
 
+    @media (min-width: 1800px) {
+        margin-left: 177px;
+        margin-right: 177px;
+    }
+
     @media (max-width: 655px){
            margin-left: 50px; 
            margin-right: 50px;
@@ -30,6 +35,10 @@
             opacity: 0.5;
         }
 
+        @media(min-width:2090px) {
+            width: 43px;
+         }
+
         @media(max-width:570px) {
             margin-left: 10px;
             margin-right: 10px;
@@ -44,6 +53,9 @@
         &:hover{
             opacity: 0.5;
         }
+        @media(min-width:2090px) {
+            font-size: 24px;
+         }
 
 }
 
@@ -76,6 +88,11 @@ a {
     width: 180px;
     padding-left: 20px;
     cursor: pointer;
+
+    @media(min-width:2090px) {
+        font-size: 24px;
+        width: 247px;
+     }
 
     @media(max-width:570px) {
         padding-left: 0px;

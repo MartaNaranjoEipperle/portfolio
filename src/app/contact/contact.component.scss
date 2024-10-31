@@ -6,6 +6,12 @@
     padding-bottom: 120px;
     width: 50%;
     font-weight: 300;
+    @media(min-width:2090px) {
+        font-size: 24px;
+     }
+    @media (min-width: 1800px) {
+        margin-left: 100px;
+    }
 }
 
 
@@ -14,10 +20,13 @@ h1 {
     font-weight: 700;
     font-size: 55px;
     line-height: 66px;
-
     display: flex;
     align-items: center;
     color: #FFFFFF;
+
+    @media(min-width:2090px) {
+       font-size: 75px;
+    }
 }
 
 .right-site {
@@ -30,6 +39,14 @@ h1 {
     padding-right: 105px;
     font-weight: 400;
     font-size: 16px;
+
+    @media(min-width:2090px) {
+        font-size: 24px;
+     }
+
+    @media (min-width: 1800px) {
+        margin-right: 77px;
+    }
 }
 
 .contact-input {
@@ -47,6 +64,16 @@ input {
     padding: 0px 0px;
     margin-top: 18px;
     margin-bottom: 40px;
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover, 
+    &:-webkit-autofill:focus, 
+    &:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 30px #201f1f inset !important;
+        -webkit-text-fill-color: #FFFFFF !important;
+    }
+    @media(min-width:2090px) {
+        font-size: 24px;
+     }
 }
 
 textarea {
@@ -59,6 +86,10 @@ textarea {
     margin-top: 18px;
     margin-bottom: 40px;
     resize: none;
+
+    @media(min-width:2090px) {
+        font-size: 24px;
+     }
 }
 
 button {
@@ -74,6 +105,9 @@ button {
     &:hover{
         opacity: 0.7!important;
     }
+    @media(min-width:2090px) {
+        font-size: 24px;
+     }
 }
 
 textarea{
@@ -196,3 +230,13 @@ textarea{
    }
 }
     
+@media(max-width:320px) {
+
+    .left-site{
+     padding-left: 22px;
+    }
+
+    .right-site {
+        padding-left: 22px;
+    }
+ }

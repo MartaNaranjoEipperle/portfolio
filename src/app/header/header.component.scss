@@ -8,6 +8,9 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-right: 77px;
+    @media (min-width: 1800px) {
+        margin-right: 177px;
+    }
 }
 
 a {
@@ -24,6 +27,13 @@ a {
     justify-content: center;
     padding-top: 10px;
     cursor: pointer;
+    @media(min-width:2090px) {   
+    font-size: 25px;
+    height: 88px;
+    padding-top: 28px;
+    font-weight: 300;
+    width: 133px;
+    }
 }
 
 .contact {
@@ -56,6 +66,7 @@ a {
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    background-color: black;
     a{
         height: 30px;
     }
@@ -91,6 +102,11 @@ a {
     &:hover{
         opacity: 0.5;
     }
+
+    @media (min-width: 1800px) {
+        margin-left: 177px;
+    }
+
     @media(max-width:655px) {
         margin-left: 50px;
     }
